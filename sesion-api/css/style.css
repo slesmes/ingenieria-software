@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Pokemon Solid";
+}
+.container{
+    padding: 20px 40px;
+    background-color: cyan;
+    & .content{
+        & .pokemon-list{
+            display: flex;
+            background-color: aquamarine;
+            & .pokemon_card{
+                background-color: lightcoral;
+            }
+        }
+    }
+}

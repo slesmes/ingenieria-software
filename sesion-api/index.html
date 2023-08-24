@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--link:css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @font-face {
+            font-family: "Pokemon Solid";
+            src: url("./fonts/pokemonsolid.ttf");
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Pokemon List</h2>
+        </div>
+        <div class="content">
+            <!--consulta a la api-->
+            <button class="btn-show-list" onclick="consultaApi()">mostrar lista</button>
+            <div class="pokemon-list">
+                <div class="pokemon_card">
+                    <div class="pokemon-img">
+                        <img id="image-pokemon" alt="img_pokemon">
+                    </div>
+                    <div class="pokemon-info">
+                        <div class="pokemon-name"><p id="api-response3"></p>
+                            <p id="api-response2"></p>
+                        </div>
+                        <div class="pokemon_abilities"><p id="api-response"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Derechos reservados UAM @2023</p>
+        </div>
+    </div>
+</body>
+<script src="./js/pokemon.js"></script>
+</html>
